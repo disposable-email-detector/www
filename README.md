@@ -1,5 +1,5 @@
 ---
-title: Disposable Email Detector
+page.title: Disposable Email Detector
 ---
 
 ## Welcome to GitHub Pages
