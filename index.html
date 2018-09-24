@@ -1,0 +1,619 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Email Hippo Wesbos DEA Identification API</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;http&quot;,&quot;javascript&quot;,&quot;java&quot;,&quot;ruby&quot;,&quot;javascript--nodejs&quot;,&quot;go&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">cURL</a>
+              <a href="#" data-language-name="http">HTTP</a>
+              <a href="#" data-language-name="javascript">JavaScript</a>
+              <a href="#" data-language-name="java">Java</a>
+              <a href="#" data-language-name="ruby">Ruby</a>
+              <a href="#" data-language-name="javascript--nodejs">Node.JS</a>
+              <a href="#" data-language-name="go">Go</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#wesbos-burner-email-providers-api-v1" class="toc-h1 toc-link" data-title="Wesbos Burner Email Providers API (v1)">Wesbos Burner Email Providers API (v1)</a>
+          </li>
+          <li>
+            <a href="#get-involved-report-new-disposable-email-address-domains" class="toc-h1 toc-link" data-title="Get Involved - Report New Disposable Email Address Domains">Get Involved - Report New Disposable Email Address Domains</a>
+          </li>
+          <li>
+            <a href="#possible-use-cases" class="toc-h1 toc-link" data-title="Possible Use Cases">Possible Use Cases</a>
+          </li>
+          <li>
+            <a href="#caveats-and-limitations" class="toc-h1 toc-link" data-title="Caveats and Limitations">Caveats and Limitations</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#speed-and-throttling" class="toc-h2 toc-link" data-title="Speed and Throttling">Speed and Throttling</a>
+                  </li>
+                  <li>
+                    <a href="#support" class="toc-h2 toc-link" data-title="Support">Support</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#integrations" class="toc-h1 toc-link" data-title="Integrations">Integrations</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#client-server-libraries" class="toc-h2 toc-link" data-title="Client / Server Libraries">Client / Server Libraries</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#base-urls" class="toc-h1 toc-link" data-title="Base URLs">Base URLs</a>
+          </li>
+          <li>
+            <a href="#Email-Hippo-Wesbos-DEA-Identification-API-DisposableEmails" class="toc-h1 toc-link" data-title="Disposable Emails API">Disposable Emails API</a>
+          </li>
+          <li>
+            <a href="#v1-api" class="toc-h1 toc-link" data-title="V1 API">V1 API</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#apideav1checkbyqueryget-parameters" class="toc-h2 toc-link" data-title="Parameters">Parameters</a>
+                  </li>
+                  <li>
+                    <a href="#apideav1checkbyqueryget-responses" class="toc-h2 toc-link" data-title="Responses">Responses</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#tocSdisposabledomainresult" class="toc-h2 toc-link" data-title="DisposableDomainResult">DisposableDomainResult</a>
+                  </li>
+                  <li>
+                    <a href="#tocSdisposabledomainmessage" class="toc-h2 toc-link" data-title="DisposableDomainMessage">DisposableDomainMessage</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href="https://github.com/wesbos/burner-email-providers">Wesbos Github Repo</a></li>
+            <li><a href="https://github.com/wesbos/burner-email-providers">Support and Suggestions</a></li>
+            <li><a href="https://app.swaggerhub.com/apis/Email-Hippo/email-hippo_wesbos_dea_identification_api/v1">Swaggerhub &amp; live demo</a></li>
+            <li><a href="#ReportNewDEAs">Report new entries</a></li>
+            <li><a href="https://www.emailhippo.com">Email Hippo</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='wesbos-burner-email-providers-api-v1'>Wesbos Burner Email Providers API (v1)</h1>
+<blockquote>
+<p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
+</blockquote>
+
+<p>This project is a free API wrapper for the burner email providers list created by <a href="https://github.com/wesbos">wesbos</a>.</p>
+
+<p><a id="ReportNewDEAs"></a></p>
+<h1 id='get-involved-report-new-disposable-email-address-domains'>Get Involved - Report New Disposable Email Address Domains</h1>
+<p>This API is only as good as the data provided by The Community. Please get involved in the project by keeping a look out for any new Disposable Domains</p>
+
+<p>If you find a burner email address provider (<abbr title="Also Known As">AKA</abbr> <abbr title="Disposable Email Addresses">DEAs</abbr>) not included on the list, please submit pull requests <a href="https://github.com/wesbos/burner-email-providers">here</a>.</p>
+<h1 id='possible-use-cases'>Possible Use Cases</h1>
+<ul>
+<li>Stopping disposable email addresses from signing up to your blog or forum.</li>
+<li>Risk scoring for on-boarding new clients.</li>
+</ul>
+<h1 id='caveats-and-limitations'>Caveats and Limitations</h1>
+<p>This service is hosted by <a href="https://www.emailhippo.com">Email Hippo</a> and is offered as a free service to The Community. As a free service, there are no Service Level Agreements or other guarantees or warranties provided.</p>
+<h2 id='speed-and-throttling'>Speed and Throttling</h2>
+<p>To ensure fair usage and a good performance experience for everyone, there are controls in place to restrict the speed at which you can use this service. The maximum speed permitted is 10 queries per second - after that the service will return HTTP code 429 (slow down) for a duration of 1 minute.</p>
+
+<aside class="notice">
+The data returned is derived from the wesbos Github repo and while there are a lot of domains on the list, this is only a small subset of the Disposable Email Address domains known to Email Hippo in it's commercial offering. That being said, the wesbos list is fairly good and certainly better than having nothing in place to protect your sign up against from abuse from DEAs.
+</aside>
+<h2 id='support'>Support</h2>
+<p>Officially, this is an unsupported service that is offered on a best efforts basis and can be withdrawn at any time. However, if you have any issues or suggestions, please feel free to raise these on the Github repo and we&#39;ll look into it as soon as we are able.</p>
+<h1 id='integrations'>Integrations</h1><h2 id='client-server-libraries'>Client / Server Libraries</h2>
+<p>There is a comprehensive catalog of client and server code snippets and libraries available over at <a href="https://app.swaggerhub.com/apis/Email-Hippo/email-hippo_wesbos_dea_identification_api/v1">SwaggerHub</a>. </p>
+<h3 id='examples-of-client-server-code-swaggerhub'>Examples of client server code @ SwaggerHub</h3>
+<ul>
+<li>PHP</li>
+<li>ASP.NET core</li>
+<li>Android</li>
+<li>C#</li>
+<li>Spring</li>
+<li>Haskell</li>
+</ul>
+
+<p>To access these, visit <a href="https://app.swaggerhub.com/apis/Email-Hippo/email-hippo_wesbos_dea_identification_api/v1">SwaggerHub</a> and click the &quot;Export&quot; option on the top right of the page.</p>
+<h1 id='base-urls'>Base URLs</h1>
+<ul>
+<li><a href="https://api.disposable-email-detector.com">https://api.disposable-email-detector.com</a></li>
+</ul>
+
+<h1 id="Email-Hippo-Wesbos-DEA-Identification-API-DisposableEmails">Disposable Emails API</h1>
+
+<p>Query Disposable Email Address (DEA) records from Wesbos <a href="https://github.com/wesbos/burner-email-providers">Github repo</a>.</p>
+<h1 id='v1-api'>V1 API</h1>
+<p><a id="opIdApiDeaV1CheckByQueryGet"></a></p>
+
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl -X GET https://api.disposable-email-detector.com/api/dea/v1/check/<span class="o">{</span>query<span class="o">}</span> <span class="se">\</span>
+  -H <span class="s1">'Accept: application/json'</span>
+
+</code></pre><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.disposable-email-detector.com/api/dea/v1/check/{query}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+
+Accept: application/json
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">'Accept'</span><span class="p">:</span><span class="s1">'application/json'</span>
+
+<span class="p">};</span>
+
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'https://api.disposable-email-detector.com/api/dea/v1/check/{query}'</span><span class="p">,</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'get'</span><span class="p">,</span>
+
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span><span class="p">,</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+
+</code></pre><pre class="highlight java tab-java"><code><span class="n">URL</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">"https://api.disposable-email-detector.com/api/dea/v1/check/{query}"</span><span class="o">);</span>
+<span class="n">HttpURLConnection</span> <span class="n">con</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">obj</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">con</span><span class="o">.</span><span class="na">setRequestMethod</span><span class="o">(</span><span class="s">"GET"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">responseCode</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="na">getResponseCode</span><span class="o">();</span>
+<span class="n">BufferedReader</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span>
+    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">con</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">()));</span>
+<span class="n">String</span> <span class="n">inputLine</span><span class="o">;</span>
+<span class="n">StringBuffer</span> <span class="n">response</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">((</span><span class="n">inputLine</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">inputLine</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+
+</code></pre><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
+<span class="nb">require</span> <span class="s1">'json'</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://api.disposable-email-detector.com/api/dea/v1/check/{query}'</span><span class="p">,</span>
+  <span class="ss">params: </span><span class="p">{</span>
+  <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
+
+<span class="nb">p</span> <span class="no">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+</code></pre><pre class="highlight javascript tab-javascript--nodejs"><code><span class="kr">const</span> <span class="nx">fetch</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'node-fetch'</span><span class="p">);</span>
+
+<span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">'Accept'</span><span class="p">:</span><span class="s1">'application/json'</span>
+
+<span class="p">};</span>
+
+<span class="nx">fetch</span><span class="p">(</span><span class="s1">'/api.disposable-email-detector.com/api/dea/v1/check/{query}'</span><span class="p">,</span>
+<span class="p">{</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span>
+
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre><pre class="highlight go tab-go"><code><span class="k">package</span><span class="x"> </span><span class="n">main</span><span class="x">
+
+</span><span class="k">import</span><span class="x"> </span><span class="p">(</span><span class="x">
+       </span><span class="s">"bytes"</span><span class="x">
+       </span><span class="s">"net/http"</span><span class="x">
+</span><span class="p">)</span><span class="x">
+
+</span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
+
+    </span><span class="n">headers</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">string</span><span class="p">{</span><span class="x">
+        </span><span class="s">"Accept"</span><span class="o">:</span><span class="x"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">"application/json"</span><span class="p">},</span><span class="x">
+
+    </span><span class="p">}</span><span class="x">
+
+    </span><span class="n">data</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">bytes</span><span class="o">.</span><span class="n">NewBuffer</span><span class="p">([]</span><span class="kt">byte</span><span class="p">{</span><span class="n">jsonReq</span><span class="p">})</span><span class="x">
+    </span><span class="n">req</span><span class="p">,</span><span class="x"> </span><span class="n">err</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">http</span><span class="o">.</span><span class="n">NewRequest</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span><span class="x"> </span><span class="s">"https://api.disposable-email-detector.com/api/dea/v1/check/{query}"</span><span class="p">,</span><span class="x"> </span><span class="n">data</span><span class="p">)</span><span class="x">
+    </span><span class="n">req</span><span class="o">.</span><span class="n">Header</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">headers</span><span class="x">
+
+    </span><span class="n">client</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="o">&amp;</span><span class="n">http</span><span class="o">.</span><span class="n">Client</span><span class="p">{}</span><span class="x">
+    </span><span class="n">resp</span><span class="p">,</span><span class="x"> </span><span class="n">err</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">client</span><span class="o">.</span><span class="n">Do</span><span class="p">(</span><span class="n">req</span><span class="p">)</span><span class="x">
+    </span><span class="c">// ...</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span></code></pre>
+<p><code>GET /api/dea/v1/check/{query}</code></p>
+
+<p><em>Check if an email address or domain is a Disposable Email Address (DEA).</em></p>
+
+<p>Lookup a domain or email address against the Wesbos Github DEA list.</p>
+
+<h3 id="apideav1checkbyqueryget-parameters">Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>query</td>
+<td>path</td>
+<td>string</td>
+<td>true</td>
+<td>The domain or email address to query.</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Example responses</p>
+
+<p>200 Response</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"doc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"query"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"isDisposable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h3 id="apideav1checkbyqueryget-responses">Responses</h3>
+
+<table><thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#schemadisposabledomainresult">DisposableDomainResult</a></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Bad request. Request is empty/null or exceeds the maximum allowed length of 255 characters.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>429</td>
+<td><a href="https://tools.ietf.org/html/rfc6585#section-4">Too Many Requests</a></td>
+<td>Maximum processing rate exceeded. Please slow your requests to &lt; 10 queries per second.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>500</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.6.1">Internal Server Error</a></td>
+<td>Server error.</td>
+<td>None</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+<h1 id='schemas'>Schemas</h1>
+<h2 id="tocSdisposabledomainresult">DisposableDomainResult</h2>
+
+<p><a id="schemadisposabledomainresult"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"doc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"query"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"isDisposable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p><em>The result that shows whether the domain is disposable together with any error information.</em></p>
+<h3 id='properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>doc</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>The documentation URL.</td>
+</tr>
+<tr>
+<td>query</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>The query (i.e the domain name to check against the main wesbos list).</td>
+</tr>
+<tr>
+<td>result</td>
+<td><a href="#schemadisposabledomainmessage">DisposableDomainMessage</a></td>
+<td>false</td>
+<td>none</td>
+<td>Disposable Domain Message</td>
+</tr>
+</tbody></table>
+
+<h2 id="tocSdisposabledomainmessage">DisposableDomainMessage</h2>
+
+<p><a id="schemadisposabledomainmessage"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"isDisposable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p><em>Disposable Domain Message</em></p>
+<h3 id='properties-2'>Properties</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>isDisposable</td>
+<td>boolean</td>
+<td>false</td>
+<td>none</td>
+<td>Whether this domain is a disposable domain.</td>
+</tr>
+<tr>
+<td>error</td>
+<td>string</td>
+<td>false</td>
+<td>none</td>
+<td>If there is an error, the message is described here.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">cURL</a>
+                <a href="#" data-language-name="http">HTTP</a>
+                <a href="#" data-language-name="javascript">JavaScript</a>
+                <a href="#" data-language-name="java">Java</a>
+                <a href="#" data-language-name="ruby">Ruby</a>
+                <a href="#" data-language-name="javascript--nodejs">Node.JS</a>
+                <a href="#" data-language-name="go">Go</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
